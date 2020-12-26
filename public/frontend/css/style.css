@@ -1,0 +1,528 @@
+
+.container-fluid{
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+.icon-bar {
+  width: 100%; /* Full-width */
+  background-color: #555; /* Dark-grey background */
+  overflow: auto; /* Overflow due to float */
+}
+
+.icon-bar a {
+  float: left; /* Float links side by side */
+  text-align: center; /* Center-align text */
+  width: 20%; /* Equal width (5 icons with 20% width each = 100%) */
+  padding: 12px 0; /* Some top and bottom padding */
+  transition: all 0.3s ease; /* Add transition for hover effects */
+  color: white; /* White text color */
+  font-size: 36px; /* Increased font size */
+}
+
+.icon-bar a:hover {
+  background-color: #000; /* Add a hover color */
+}
+
+.active {
+  background-color: #4CAF50; /* Add an active/current color */
+}
+
+.bg-menu{
+    background-color: black;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: fixed; /*Cho menu cố định 1 vị trí với top và left*/
+    top: 0; /*Nằm trên cùng*/
+    left: 0; /*Nằm sát bên trái*/
+    z-index: 100000; /*Hiển thị lớp trên cùng*/
+}
+.khung-menu {
+    padding: 0;
+    display: block;
+    }
+.khung-menu a{
+    color: #fff;
+    text-decoration: none;
+    margin-right: 15px;
+    
+}
+.nav{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    margin: 0 250px 0 250px;
+    transform: scale(1);
+    transition: all 0.3s ease-in-out 0.2s;
+    
+}
+.navbar-link{
+    width: 100px;
+    color:#fff;
+    height: 100%;
+    float: left;
+    text-align: center;
+    margin: auto 10px;
+    padding: 10px 0;
+}
+.nav a:hover{
+    transform: scale(1.5);
+    transition: all 0.3s ease-in-out 0.1s;
+}
+/*Đăng kí / đăng nhập----------------------------- */
+
+.fa-user-circle{
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    float: right;
+    margin-top: -38px;
+}
+
+.fa-user-circle:hover{
+    color: #ff3333;
+}
+
+.khung-menu-mini, .khung-menu-mini-togle{
+    padding: 0;
+    display: none;
+    min-height: 40px;
+    text-decoration: none;
+    float: right;
+    
+}
+.khung-menu-mini-togle{
+    border-bottom: 3px solid red;
+    border-top: 3px solid red;
+
+}
+.khung-menu-mini-togle a{
+    padding: 5px;
+}
+.bt-menu-mini{
+    width: 35px;
+    height: 35px;
+    margin:3px 0px 3px 0;
+    background-color: #333;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 10px;
+    padding: 5px;
+}
+.icon-bar{
+    background-color: #fff;
+}
+.menu-mini{
+    float: right;
+    text-align: right;
+    text-decoration: none;
+    color: #fff;
+}
+ .navbar-link:hover
+{
+    color:#000;
+    list-style: none;
+    text-decoration: none;
+    background-color:#fff;
+    transition:0.5s;
+}
+
+.khung-menu a:hover
+{
+    color:red; 
+    transition:0.5s;
+}
+
+/* search----------------------------- */
+.search{
+    width: 100%;
+    height: 40px;
+    background-color: black;
+}
+.search form{
+    width: 100%;
+    height: 100%;
+}
+.search form input{
+    height: 30px;
+    width: 30%;
+    color: #0033cc;
+    background: #b3c6ff;
+    border-style: initial;
+    float: right;
+    margin-right: 150px;
+}
+.search form button{
+    height: 30px;
+    width: 5%;
+    margin-left: -7px;
+    color: #0033cc;
+    background: #b3c6ff;
+    border-style: initial;
+    outline: none;
+    float: right;
+    margin-right: -370px;
+}
+.search form button:hover{
+    color: #0066cc;
+    background: #4d79ff;
+}
+.search form input:hover{
+    background: #ccd9ff;
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+
+/*slider----------------------------------   */
+
+.bg-slider{
+    width: 100%;
+    opacity: 1;
+}
+.z-index-1{
+	z-index:1;	
+}
+.z-index-2{
+	z-index:2;	
+}
+.text-slider{
+	text-align:left;
+	top:25%;
+	left:15%;
+	width:50%;
+}
+#bn-slider{
+	padding:10px 25px;
+	background-color:#CCC;
+	border:1px solid #333;
+	border-radius:5px;
+	color:#000;
+}
+.left span, .right span{
+    background-color: red;
+    border-radius: 4px;
+}
+/*menu-tab-left ----------------------------------   */
+
+.menu-tab-left{
+    border: none;
+    margin: 20px 100px 0 -100px;
+    padding: 300px 0 300px 0;
+    background-color: white;
+}
+.menu-tab-left ul{
+    list-style: none;
+    padding: 0;
+}
+.menu-tab-left ul li{
+    padding: 5px 0 10px 0;
+
+}
+.menu-tab-left ul li a{
+    font-size: 20px;
+    text-decoration: none;
+    padding: 0 20px;
+
+}
+.menu-tab-left ul li h3{
+    text-align: center;
+    font-weight: bold;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+.menu-tab-left h3{
+    color: #cc0000;
+}
+
+.menu-tab-left a{
+    text-align: center;
+    color: black;
+}
+
+.menu-tab-left li:not(first-child):hover a{
+    background-color: black;
+    color: white;
+    padding-left: 50%;
+    padding-right: 50%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.menu-tab-left li:hover img{
+    display: none;
+}
+/*selection----------------------------------   */
+.selection{
+    min-height: 100px;
+    border-bottom: 1px solid #dfe5e9;
+    padding-bottom: 17px;
+    padding-left: 16px;
+    padding-top: 16px;
+    padding-right: 16px;
+    position: relative;
+    background: #fff;
+    margin: 20px 0;
+}
+.selection h3{
+    font-weight: bold;
+    text-align: center;
+    margin: 10px;
+    background-color: #cc0000;
+    color: white;
+}
+.product{
+    min-height: 300px;
+    border: 2px solid #dfe5e9;
+    margin-bottom: 20px;
+    margin-top: 12px;
+    background: #fff;
+    padding: 4px;
+    -webkit-box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);;
+}
+.product-img{
+    border: 0px solid #000;
+}
+.product-img img{
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    transform: scale(1);
+    transition: all 0.3s ease-in-out 0.1s;
+}
+.product-img img:hover{
+    transform: scale(2);
+    transition: all 0.3s ease-in-out 0.1s;
+}
+.product-text{
+    height: 100%;
+    border: 0px solid #000;
+}
+.product-text p{
+    text-overflow: ellipsis ;
+}
+.product-text a{
+    text-decoration: none;
+    color: #cc0000;
+    margin-bottom: 0px;
+    font-size: 18px;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+}
+.product-text > p:nth-of-type(1){
+    margin-left: 25px;
+    font-family: Helvetica;
+    font-size: 19px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: -0.96px;
+    text-align: left;
+    color: #cc0000;
+}
+.product button{
+    margin: 40px 20px auto 20px;
+    padding: 5px;
+    border-radius: 5px;
+    border-style: initial;
+    color: black;
+    background: rgb(255,189,22);
+    background: linear-gradient(183deg, rgba(255,189,22,1) 0%, rgba(205,144,11,1) 100%);
+    text-decoration: none;
+}
+
+.rating{
+    margin: 100px 30px 10px 50px;
+    text-align:center;
+    margin: 0px auto;
+    padding:0px;
+    width:120px;
+    font-size:20px;
+    color:#e9b31b;
+    color: rgba(233,179,27, 0.8);
+    text-shadow: 1px -4px 6px #fff, 0 0 0 #000, 1px 4px 6px #fff;
+}
+
+/*menu-tab-right ----------------------------------   */
+.menu-tab-right{
+    border: none;
+    margin: 20px -100px 0 100px;
+    padding: auto;
+    background-color: white;
+}
+.menu-tab-right ul{
+    list-style: none;
+    padding: 0;
+}
+.menu-tab-right ul li{
+    padding: 5px 0 10px 0;
+
+}
+.menu-tab-right ul li a{
+    font-size: 20px;
+    text-decoration: none;
+    padding: 0 20px;
+
+}
+.menu-tab-right ul li h6{
+    text-align: center;
+    font-weight: bold;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+.menu-tab-right h3{
+    color: #cc0000;
+}
+
+.menu-tab-right a{
+    text-align: center;
+    color: black;
+}
+
+
+/*footer----------------------------------   */
+.bg-footer{
+    width: 100%;
+    min-height: 20px;
+    background-color: #333;
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+.footer-left{
+    color: #fff;
+}
+.footer-left h3{
+    margin-bottom: 30px;
+}
+.footer-center{
+    color: #fff;
+}
+.footer-right iframe{
+    width: 100%;
+    height: 350px;
+    border-radius: 40px;
+    padding: 20px;
+}
+
+
+/*end----------------------------------   */
+.end{
+    width: 100%;
+    background-color: #000;
+    height: 40px;
+}
+.end p{
+    color: #fff;
+    line-height: 40px;
+}
+.end span{
+    color: red;
+}
+
+/*test----------------------------------   */
+
+.icon-bar {
+  width: 100%; /* Full-width */
+  background-color: #555; /* Dark-grey background */
+  overflow: auto; /* Overflow due to float */
+}
+
+.icon-bar a {
+  float: left; /* Float links side by side */
+  text-align: center; /* Center-align text */
+  width: 20%; /* Equal width (5 icons with 20% width each = 100%) */
+  padding: 12px 0; /* Some top and bottom padding */
+  transition: all 0.3s ease; /* Add transition for hover effects */
+  color: white; /* White text color */
+  font-size: 36px; /* Increased font size */
+}
+
+.icon-bar a:hover {
+  background-color: #000; /* Add a hover color */
+}
+
+.active {
+  background-color: #4CAF50; /* Add an active/current color */
+}
+
+/*different size----------------------------------   */
+
+@media screen and (max-width:970px)
+{
+    /* menu ------------------------------------------*/
+    .navbar-link{
+        margin: auto 0;
+        
+    }
+    /* search ----------------------------------------*/
+    .search form input{
+        width: 70%;
+        float: right;
+    }
+    .search form button{
+        width: 10%;
+        float: right;
+        margin: -30px 84px 0 auto;
+    }
+    /*selection----------------------------------   */
+    .menu-tab-left ul li h3{
+        font-size: 15px;
+    
+    }
+
+
+    .menu-tab-right
+    {
+        display: none;
+    }
+}
+ @media screen and (max-width:767px)
+ {
+     /* menu ----------------------------------------*/
+     .khung-menu{display: none;}
+     .khung-menu-mini{
+        display: block;
+    }
+    .fa-facebook-square, .fa-user-circle{
+        padding: 6px 5px;
+    }
+    /* search ----------------------------------------*/
+    .search form input{
+        width: 70%;
+        float: left;
+    }
+    .search form button{
+        width: 15%;
+        float: right;
+        margin: -30px 65px 0 auto;
+    }
+    /*selection----------------------------------   */
+    .menu-tab-left ul li a{
+        font-size: 15px;
+        padding: 0 10px;
+    
+    }
+    .menu-tab-left ul li h3{
+        font-size: 10px;
+    
+    }
+    .menu-tab-right
+    {
+        display: none;
+    }
+    .product-text p{
+        display: none;
+    }
+    .product-text a{
+        display: block;
+        position: relative;
+        margin: 10px 0 0 -80px;
+    }
+
+ }
+

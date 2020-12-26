@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+.select{
+    width: 100%;
+    height: 38px;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
